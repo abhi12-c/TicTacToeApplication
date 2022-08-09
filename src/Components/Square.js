@@ -1,12 +1,11 @@
 import React from "react";
-//import "./Square.style.css";
-import "./root.scss";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default function (props) {
+const Square = ({ value, onClick }) => {
   return (
-    <button type="submit" className="square">
-      {props.value}
+    <button type="button" className="square" onClick={onClick}>
+      {value}
     </button>
   );
-}
+};
+
+export default Square;
