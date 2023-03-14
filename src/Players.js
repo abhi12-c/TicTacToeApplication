@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import { useState } from "react";
 
@@ -21,17 +22,21 @@ export default function () {
   return (
     <>
       <div>
-        <label htmlFor="name1" id="name1">
-          Name of First Player:
-        </label>
-        <input
-          type="text"
-          autocomplete="off"
-          value={name1}
-          name="name1"
-          id="name1"
-          onChange={handleChange1}
-        />
+        <div>
+          <label htmlFor="name1" id="name1">
+            Name of First Player:
+          </label>
+        </div>
+        <div>
+          <input
+            type="text"
+            autocomplete="off"
+            value={name1}
+            name="name1"
+            id="name1"
+            onChange={handleChange1}
+          />
+        </div>
       </div>
       <div>
         <label htmlFor="name2" id="name2">
